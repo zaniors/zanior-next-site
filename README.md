@@ -16,7 +16,7 @@
 - [x] Nginx
 - [x] CI & CD
 - [x] 七牛云存储
-- ...
+- [] ...
 
 ## 组件复用
 把项目用到的组件（Button、Menu、Model等）都会单独抽离出来，并且使用ReactHooks开发，发布到npm上去，site-next-ui详情[点击](https://github.com/ZAnsder/site-next-ui)
