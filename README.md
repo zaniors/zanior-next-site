@@ -10,6 +10,7 @@
 - [x] Scss
 - [x] Jest
 - [x] Node
+- [x] Koa
 - [x] MongoDB
 - [x] Mongoose
 - [x] Docker
