@@ -1,0 +1,31 @@
+.sub-menu-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 0 1rem;
+  padding: 0 1rem;
+  border-radius: 6px;
+  background-color: #fff;
+  text-align: center;
+  user-select: none;
+
+  .sub-menu-item {
+    position: relative;
+    display: inline-block;
+    padding: 1.25rem 0;
+    min-width: 24%;
+    border-radius: 6px;
+
+    span:first-child {
+      padding-bottom: .5rem;
+      font-size: 1.4rem;
+    }
+
+    span {
+      position: relative;
+      display: block;
+      padding: 0 .5rem;
+    }
+  }
+}
