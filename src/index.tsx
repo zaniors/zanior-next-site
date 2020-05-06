@@ -8,7 +8,7 @@ import './index.scss';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <ul>
+      {/* <ul>
         <li>
           <Link to="/home">Home</Link>
         </li>
@@ -21,7 +21,7 @@ ReactDOM.render(
         <li>
           <Link to="/comments">comments</Link>
         </li>
-      </ul>
+      </ul> */}
 
       <Switch>
         {
@@ -38,9 +38,9 @@ ReactDOM.render(
                           <Route
                             key={i}
                             path={subRoute.path}
-                            render={props => {
-                              return <subRoute.component />
-                            }} >
+                            render={props => (
+                              <subRoute.component />
+                            )} >
                           </Route>
                         ))
                       }

@@ -1,0 +1,15 @@
+.layout-container {
+  display: flex;
+
+  .layout-l {
+    width: 20rem;
+    flex: 0 0 20rem;
+  }
+
+  .layout-r {
+    flex: 1;
+    max-width: 900px;
+    overflow: hidden;
+    margin: 2rem auto;
+  }
+}
