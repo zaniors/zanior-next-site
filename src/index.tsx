@@ -1,12 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Switch, Route, BrowserRouter as Router, Link } from 'react-router-dom';
+import routes from './router/index';
 
 import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router>
+      <ul>
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/detail">detail</Link>
+        </li>
+        <li>
+          <Link to="/resume">resume</Link>
+        </li>
+        <li>
+          <Link to="/comments">comments</Link>
+        </li>
+      </ul>
+
+      <Switch>
+        {
+          routes.map((route, i) => (
+            <Route
+              key={i}
+              path={route.path}
+              render={props => (
+                <route.component routes={route.routes}>
+                  {
+                    route.routes && route.routes.map((subRoute, i) => (
+                      <subRoute.component key={i} />
+                    ))
+                  }
+                </route.component>
+              )}
+            />
+          ))
+        }
+      </Switch>
+    </Router>
+  </React.StrictMode >,
   document.getElementById('root')
 );
