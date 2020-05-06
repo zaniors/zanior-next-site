@@ -30,11 +30,21 @@ ReactDOM.render(
               key={i}
               path={route.path}
               render={props => (
-                <route.component routes={route.routes}>
+                <route.component>
                   {
-                    route.routes && route.routes.map((subRoute, i) => (
-                      <subRoute.component key={i} />
-                    ))
+                    <Switch>
+                      {
+                        route.routes && route.routes.map((subRoute, i) => (
+                          <Route
+                            key={i}
+                            path={subRoute.path}
+                            render={props => {
+                              return <subRoute.component />
+                            }} >
+                          </Route>
+                        ))
+                      }
+                    </Switch>
                   }
                 </route.component>
               )}
