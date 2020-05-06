@@ -10,7 +10,7 @@ export const Header: FC = () => {
       <h2 className="name">
         <a href="/">张旭</a>
       </h2>
-      <p>Yesterday's the past, tomorrow's the future, but today is a GIFT. That's why it's called the present.</p>
+      <p className="title">Yesterday's the past, tomorrow's the future, but today is a GIFT. That's why it's called the present.</p>
     </header>
   )
 }

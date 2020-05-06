@@ -20,10 +20,6 @@ export const SubMenu: FC = () => {
         <span>17</span>
         <span>标签</span>
       </a>
-      <a href="/detail" className="sub-menu-item">
-        <span>17</span>
-        <span>标签</span>
-      </a>
     </section>
   )
 }

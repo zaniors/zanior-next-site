@@ -1,9 +1,13 @@
 .layout-container {
+  height: 100%;
   display: flex;
 
   .layout-l {
+    position: relative;
     width: 20rem;
+    height: 100%;
     flex: 0 0 20rem;
+    border-right: 1px solid rgba(0,0,0,.1);
   }
 
   .layout-r {
@@ -11,5 +15,6 @@
     max-width: 900px;
     overflow: hidden;
     margin: 2rem auto;
+    padding: 0 2rem;
   }
 }

@@ -1,0 +1,48 @@
+.main-menu-container {
+  padding: 2rem 0 4rem;
+  user-select: none;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        height: 3rem;
+        line-height: 3rem;
+        position: relative;
+        display: block;
+        padding-right: 2rem;
+        text-align: right;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          top: 50%;
+          right: -.3rem;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #f3f6f7;
+          -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+          content: "";
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          color: #8409e6;
+          font-size: 1.168rem;
+
+          &::after {
+            background-color: #8409e6;
+          }
+        }
+      }
+    }
+  }
+}

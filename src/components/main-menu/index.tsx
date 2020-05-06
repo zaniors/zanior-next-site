@@ -3,6 +3,11 @@ import './index.scss';
 
 export const MainMenu: FC = () => {
   return (
-    <section>主菜单</section>
+    <nav className="main-menu-container">
+      <ul>
+        <li><a href="/home">首页</a></li>
+        <li><a href="/resume">简历</a></li>
+      </ul>
+    </nav>
   )
 }

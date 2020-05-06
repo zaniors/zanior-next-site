@@ -1,7 +1,40 @@
 .header-container {
   margin: 1rem 1rem .5rem;
-  padding: 2.6rem 2rem 1rem;
+  padding: 2.6rem 2rem;
   border-radius: 6px;
   background-color: #fff;
   text-align: center;
+
+  .avatar {
+    display: block;
+    overflow: hidden;
+
+    img {
+      display: inline-block;
+      padding: 2px;
+      width: 8rem;
+      height: 8rem;
+      border: 1px solid;
+      border-radius: 50%;
+      border-color: rgba(132, 9, 230, .4);
+    }
+  }
+
+  .name {
+    margin: .5rem 0 0;
+
+    >a {
+      display: block;
+      letter-spacing: 0;
+      line-height: 2.4;
+      white-space: nowrap;
+      -webkit-transition: color .15s;
+      transition: color .15s;
+    }
+  }
+
+  .title {
+    line-height: 1.5;
+    opacity: .618;
+  }
 }

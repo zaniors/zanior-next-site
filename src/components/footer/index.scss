@@ -1,0 +1,18 @@
+.footer-container {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.4em;
+
+  a {
+    display: inline-block;
+    transition: color .15s;
+
+    &:hover {
+      color: #8409e6;
+    }
+  }
+}
