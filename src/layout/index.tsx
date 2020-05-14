@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import { Header } from '../components/header';
-import { MainMenu } from '../components/main-menu';
-import { SubMenu } from '../components/sub-menu';
-import { Footer } from '../components/footer';
+import { Header } from '../common/components/header';
+import { MainMenu } from '../common/components/main-menu';
+import { SubMenu } from '../common/components/sub-menu';
+import { Footer } from '../common/components/footer';
 import { Redirect, useLocation } from 'react-router-dom';
 import './index.scss';
 

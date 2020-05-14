@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Switch, Route, BrowserRouter as Router, Link } from 'react-router-dom';
 import routes from './router/index';
 import 'normalize.css';
+import 'zanext/dist/index.css';
 import './index.scss';
 
 ReactDOM.render(

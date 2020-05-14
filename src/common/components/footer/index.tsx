@@ -7,14 +7,14 @@ export const Footer: FC = () => {
       <section className="contact-list">
         <a
           className="icon-email"
-          rel="external nofollow noopener"
+          rel="external nofollow noopener noreferrer"
           target="_blank"
           href="mailto:zansderjs@gmail.com"
         >email</a>
 
         <a
           className="icon-github"
-          rel="external nofollow noopener"
+          rel="external nofollow noopener noreferrer"
           target="_blank"
           href="https://github.com/ZAnsder"
         >github</a>
@@ -25,7 +25,11 @@ export const Footer: FC = () => {
       </p>
 
       <p className="beian">
-        <a target="_blank" rel="noopener" href="http://www.miibeian.gov.cn/">渝ICP备17003338号</a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.miibeian.gov.cn/"
+        >渝ICP备17003338号</a>
       </p>
     </footer>
   )
