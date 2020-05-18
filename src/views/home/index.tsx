@@ -25,13 +25,42 @@ export class Home extends Component<{}, HomeState> {
           title: '数据列表的方式呈现',
           cover: 'https://cdn.compelcode.com/image/fe/react-lifecycle.png',
           intro: '前天，已将《野草》编定了；这回便轮到陆续载在《莽原》上的《旧事重提》，我还替他改了一个名称：《朝花夕拾》。带露折花，色香自然要好得多，但是我不能够。便是现在心目中的离奇和芜杂，我也还不能使他即刻幻化，转成离奇和芜杂的文章。或者，他日仰看流云时，会在我的眼前一闪烁罢。'
-        }
+        },
+        {
+          id: 1,
+          createTime: '2020-05-13',
+          title: '数据列表的方式呈现',
+          cover: 'https://cdn.compelcode.com/image/fe/react-lifecycle.png',
+          intro: '前天，已将《野草》编定了；这回便轮到陆续载在《莽原》上的《旧事重提》，我还替他改了一个名称：《朝花夕拾》。带露折花，色香自然要好得多，但是我不能够。便是现在心目中的离奇和芜杂，我也还不能使他即刻幻化，转成离奇和芜杂的文章。或者，他日仰看流云时，会在我的眼前一闪烁罢。'
+        },
+        {
+          id: 2,
+          createTime: '2020-05-13',
+          title: '数据列表的方式呈现',
+          cover: 'https://cdn.compelcode.com/image/fe/react-lifecycle.png',
+          intro: '前天，已将《野草》编定了；这回便轮到陆续载在《莽原》上的《旧事重提》，我还替他改了一个名称：《朝花夕拾》。带露折花，色香自然要好得多，但是我不能够。便是现在心目中的离奇和芜杂，我也还不能使他即刻幻化，转成离奇和芜杂的文章。或者，他日仰看流云时，会在我的眼前一闪烁罢。'
+        },
+        {
+          id: 3,
+          createTime: '2020-05-13',
+          title: '数据列表的方式呈现',
+          cover: 'https://cdn.compelcode.com/image/fe/react-lifecycle.png',
+          intro: '前天，已将《野草》编定了；这回便轮到陆续载在《莽原》上的《旧事重提》，我还替他改了一个名称：《朝花夕拾》。带露折花，色香自然要好得多，但是我不能够。便是现在心目中的离奇和芜杂，我也还不能使他即刻幻化，转成离奇和芜杂的文章。或者，他日仰看流云时，会在我的眼前一闪烁罢。'
+        },
+        {
+          id: 4,
+          createTime: '2020-05-13',
+          title: '数据列表的方式呈现',
+          cover: 'https://cdn.compelcode.com/image/fe/react-lifecycle.png',
+          intro: '前天，已将《野草》编定了；这回便轮到陆续载在《莽原》上的《旧事重提》，我还替他改了一个名称：《朝花夕拾》。带露折花，色香自然要好得多，但是我不能够。便是现在心目中的离奇和芜杂，我也还不能使他即刻幻化，转成离奇和芜杂的文章。或者，他日仰看流云时，会在我的眼前一闪烁罢。'
+        },
       ]
     }
   }
 
   render() {
     const { list } = this.state;
+    
     return (
       <section>
         <ArticleLine list={list}></ArticleLine>

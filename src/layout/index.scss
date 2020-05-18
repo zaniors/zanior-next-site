@@ -7,14 +7,15 @@
     width: 20rem;
     height: 100%;
     flex: 0 0 20rem;
-    border-right: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
   }
 
   .layout-r {
     flex: 1;
     max-width: 900px;
-    overflow: hidden;
     margin: 2rem auto;
     padding: 0 2rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }

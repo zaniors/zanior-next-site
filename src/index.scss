@@ -39,3 +39,8 @@ a {
 *:after {
   box-sizing: inherit;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+}
