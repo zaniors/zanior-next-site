@@ -1,59 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Switch, Route, BrowserRouter as Router, Link } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
 import routes from './router/index';
 import 'normalize.css';
 import 'zanext/dist/index.css';
 import './index.scss';
+import history from './utils/history';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      {/* <ul>
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
-        <li>
-          <Link to="/detail">detail</Link>
-        </li>
-        <li>
-          <Link to="/resume">resume</Link>
-        </li>
-        <li>
-          <Link to="/comments">comments</Link>
-        </li>
-      </ul> */}
-
-      <Switch>
-        {
-          routes.map((route, i) => (
-            <Route
-              key={i}
-              path={route.path}
-              render={props => (
-                <route.component>
-                  {
-                    <Switch>
-                      {
-                        route.routes && route.routes.map((subRoute, i) => (
-                          <Route
-                            key={i}
-                            path={subRoute.path}
-                            render={props => (
-                              <subRoute.component />
-                            )} >
-                          </Route>
-                        ))
-                      }
-                    </Switch>
-                  }
-                </route.component>
-              )}
-            />
-          ))
-        }
-      </Switch>
-    </Router>
-  </React.StrictMode >,
+  <Router history={history}>
+    {renderRoutes(routes)}
+  </Router>,
   document.getElementById('root')
 );

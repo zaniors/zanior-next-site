@@ -1,14 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { Header } from '../common/components/header';
 import { MainMenu } from '../common/components/main-menu';
 import { SubMenu } from '../common/components/sub-menu';
 import { Footer } from '../common/components/footer';
-import { Redirect, useLocation } from 'react-router-dom';
 import './index.scss';
+import { renderRoutes } from 'react-router-config';
 
-export const Layout: FC = (props) => {
-  const { children } = props;
-  const { pathname } = useLocation()
+export const Layout = (props: any) => {
   return (
     <section className="layout-container">
       <section className="layout-l">
@@ -19,8 +17,7 @@ export const Layout: FC = (props) => {
       </section>
 
       <section className="layout-r">
-        {pathname === '/' && <Redirect to={'/home'} />}
-        {children}
+        {renderRoutes(props.route.routes)}
       </section>
     </section>
   )
