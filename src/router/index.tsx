@@ -1,5 +1,5 @@
 import { Layout } from '../layout/index';
-import { Home } from '../views/home/index';
+import Home from '../views/home/index';
 import { Detail } from '../views/detail/index';
 import { Resume } from '../views/resume/index';
 import { Comments } from '../views/comments/index';
